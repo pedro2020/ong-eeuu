@@ -1,0 +1,147 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: #f5f7fb;
+  margin: 0;
+  padding: 0;
+}
+
+/* TOPBAR */
+.topbar {
+  height: 70px;
+  background: #fff;
+  border-bottom: 1px solid #e9ecef;
+  display: flex;
+  align-items: center;
+}
+
+.topbar-logo {
+  height: 42px !important;
+  max-height: 42px !important;
+  width: auto !important;
+  display: block;
+}
+
+.topbar-user {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background: #0f172a !important;
+  min-height: calc(100vh - 70px);
+  padding-top: 20px;
+}
+
+.sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sidebar-user-box {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+
+.sidebar-user-role {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.sidebar-menu {
+  padding: 0 10px;
+}
+
+.sidebar-menu .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #cbd5e1 !important;
+  padding: 12px 14px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.sidebar-menu .nav-link i {
+  font-size: 18px;
+}
+
+.sidebar-menu .nav-link:hover,
+.sidebar-menu .nav-link.active {
+  background: #2563eb;
+  color: #fff !important;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding: 15px;
+  background: #0f172a;
+}
+
+.sidebar-user-dropdown {
+  width: 100%;
+  background: #1e293b !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 10px;
+}
+
+/* CONTENT */
+main {
+  padding: 30px 35px;
+  min-height: calc(100vh - 70px);
+}
+
+.card {
+  border: none !important;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.card h6 {
+  font-weight: 600;
+}
+
+.card small {
+  color: #6b7280;
+}
+
+/* TABLES */
+.table thead th {
+  background: #0f172a;
+  color: #fff;
+  border-color: #0f172a;
+}
+
+/* MOBILE */
+@media (max-width: 991.98px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
+    z-index: 2000;
+    transition: all 0.3s ease;
+    padding-top: 80px;
+  }
+
+  .sidebar.show {
+    left: 0;
+  }
+
+  .sidebar-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+    z-index: 1990;
+    display: none;
+  }
+
+  .sidebar-backdrop.show {
+    display: block;
+  }
+}

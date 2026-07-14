@@ -1,0 +1,239 @@
+/* ================= HERO SLIDER ================= */
+
+.home-hero{
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-slide{
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(13,44,108,0.78), rgba(33,91,188,0.55));
+}
+
+.hero-title{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text{
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 650px;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* ================= SLIDER ANIMACIÓN ================= */
+
+.carousel-fade .carousel-item {
+    transition: opacity 1s ease-in-out;
+}
+
+/* ================= FLECHAS ================= */
+
+.custom-carousel-control{
+    width: 70px;
+    opacity: 1;
+}
+
+.custom-arrow{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.35);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    line-height: 1;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.custom-carousel-control:hover .custom-arrow{
+    background: rgba(255,255,255,0.28);
+    transform: scale(1.05);
+}
+
+/* ================= INDICADORES ================= */
+
+.carousel-indicators{
+    bottom: 30px;
+    z-index: 5;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 6px;
+    border: none;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.carousel-indicators .active{
+    background-color: #fff;
+}
+
+/* ================= FEATURE CARDS ================= */
+
+.feature-section{
+    margin-top: -50px;
+    position: relative;
+    z-index: 5;
+    padding-bottom: 40px;
+}
+
+.feature-card{
+    background: #fff;
+    border-radius: 24px;
+    padding: 30px 24px;
+    box-shadow: 0 14px 40px rgba(13,44,108,0.12);
+    height: 100%;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.feature-card:hover{
+    transform: translateY(-6px);
+}
+
+.feature-icon{
+    width: 78px;
+    height: 78px;
+    margin: 0 auto 18px;
+    border-radius: 20px;
+    background: #eff5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon img{
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+.feature-card h3{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #0d2c6c;
+    margin-bottom: 12px;
+}
+
+.feature-card p{
+    margin: 0;
+    color: #5f6f86;
+    line-height: 1.7;
+}
+
+/* ================= ABOUT / COMMUNITY ================= */
+
+.section-tag{
+    display: inline-block;
+    background: #eaf2ff;
+    color: #1a4fa0;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+}
+
+.section-title{
+    font-size: 2.2rem;
+    line-height: 1.2;
+    color: #0d2c6c;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.section-text{
+    color: #5b6c84;
+    line-height: 1.9;
+    font-size: 1.04rem;
+}
+
+/* ================= CTA ================= */
+
+.home-cta{
+    position: relative;
+    background: linear-gradient(135deg, rgba(13,44,108,0.95), rgba(33,91,188,0.92)),
+                url('/images/home/cta-bg.jpg') center/cover no-repeat;
+    padding: 90px 0;
+    color: #fff;
+    overflow: hidden;
+}
+
+.cta-overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(13, 44, 108, 0.78);
+}
+
+.home-cta h2{
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.home-cta p{
+    max-width: 760px;
+    margin: 0 auto 28px;
+    color: rgba(255,255,255,0.92);
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991.98px){
+    .hero-title{
+        font-size: 2.3rem;
+    }
+
+    .feature-section{
+        margin-top: 0;
+        padding-top: 40px;
+    }
+}
+
+@media (max-width: 767.98px){
+    .hero-title{
+        font-size: 1.9rem;
+    }
+
+    .hero-text{
+        font-size: 1rem;
+    }
+
+    .section-title{
+        font-size: 1.7rem;
+    }
+
+    .home-cta h2{
+        font-size: 1.8rem;
+    }
+
+    .custom-carousel-control{
+        display: none; /* oculta flechas en móvil */
+    }
+}

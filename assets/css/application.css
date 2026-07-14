@@ -1,0 +1,303 @@
+/* ================= HERO ================= */
+
+.application-hero{
+    position: relative;
+    min-height: 100vh;
+    color: #fff;
+    overflow: hidden;
+}
+
+.application-hero-overlay{
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top right, rgba(255,255,255,0.12), transparent 30%),
+                radial-gradient(circle at bottom left, rgba(255,255,255,0.08), transparent 35%);
+}
+
+.application-badge{
+    display: inline-block;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.18);
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.application-title{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.application-text{
+    font-size: 1.1rem;
+    line-height: 1.9;
+    max-width: 680px;
+}
+
+.application-buttons{
+    margin-top: 30px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* ================= HERO BOX ================= */
+
+.hero-side-box{
+    background: rgba(255,255,255,0.12);
+    border-radius: 28px;
+    padding: 26px;
+    backdrop-filter: blur(10px);
+}
+
+.hero-side-icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.hero-side-icon img{
+    width: 36px;
+}
+
+.hero-side-box h3{
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+
+.hero-side-box ul{
+    padding-left: 18px;
+}
+
+.hero-side-box ul li{
+    margin-bottom: 8px;
+}
+
+/* ================= GENERAL ================= */
+
+.app-section{
+    padding: 90px 0;
+}
+
+.light-section{
+    background: #f4f7fc;
+}
+
+.section-chip{
+    display: inline-block;
+    background: #eaf2ff;
+    color: #1a4fa0;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.sm-chip{
+    font-size: 0.8rem;
+    padding: 6px 12px;
+}
+
+.white-chip{
+    background: rgba(255,255,255,0.18);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.25);
+}
+
+.section-title{
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #0d2c6c;
+    margin-bottom: 18px;
+}
+
+.section-subtitle{
+    max-width: 700px;
+    margin: 0 auto;
+    color: #6a7c95;
+    line-height: 1.8;
+}
+
+.section-text{
+    color: #5b6c84;
+    line-height: 1.9;
+}
+
+/* ================= OVERVIEW ================= */
+
+.overview-card{
+    background: #fff;
+    border-radius: 24px;
+    padding: 26px;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.overview-card:hover{
+    transform: translateY(-6px);
+}
+
+.overview-icon{
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 16px;
+    background: #eef4ff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overview-icon img{
+    width: 36px;
+}
+
+.overview-card h4{
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.overview-card p{
+    color: #5f6f86;
+}
+
+/* ================= MINI CARDS ================= */
+
+.mini-card{
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+}
+
+.mini-card h4{
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+/* ================= FEATURE ================= */
+
+.feature-card-app{
+    background: #fff;
+    border-radius: 24px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.feature-card-app:hover{
+    transform: translateY(-6px);
+}
+
+.feature-icon-app{
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 14px;
+    background: #eef4ff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon-app img{
+    width: 36px;
+}
+
+/* ================= LIST STACK ================= */
+
+.list-stack{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.list-card{
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+/* ================= DUAL ================= */
+
+.dual-box{
+    background: #fff;
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+}
+
+.dual-box h3{
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.dual-item{
+    margin-bottom: 14px;
+}
+
+.dual-item h4{
+    font-weight: 700;
+}
+
+/* ================= SMALL PANELS ================= */
+
+.small-panel{
+    background: #fff;
+    border-radius: 22px;
+    padding: 22px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+}
+
+.small-panel h3{
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+/* ================= CTA ================= */
+
+.application-cta{
+    background: linear-gradient(135deg, #0d2c6c, #2c74d8);
+    color: #fff;
+    padding: 90px 0;
+}
+
+.application-cta h2{
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+
+.application-cta p{
+    max-width: 700px;
+    margin: 0 auto 24px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px){
+    .application-title{
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 768px){
+    .application-title{
+        font-size: 2rem;
+    }
+
+    .app-section{
+        padding: 60px 0;
+    }
+}

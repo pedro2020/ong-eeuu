@@ -1,0 +1,197 @@
+.fellowship-hero {
+    position: relative;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.fellowship-hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(10,32,78,.88), rgba(25,72,155,.82), rgba(43,116,216,.78));
+}
+
+.fellowship-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.fellowship-hero h1 {
+    font-size: 56px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.fellowship-hero p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+
+.badge-custom {
+    display: inline-block;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.fellowship-hero .buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.section {
+    padding: 90px 0;
+}
+
+.section h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 15px 0;
+}
+
+.section p {
+    color: #5b6475;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.chip {
+    display: inline-block;
+    background: #eef4ff;
+    color: #2453a6;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.card-box {
+    background: #fff;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08);
+    transition: all 0.25s ease;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.card-box:hover {
+    transform: translateY(-5px);
+}
+
+.card-box h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.timeline {
+    display: flex;
+    gap: 18px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 22px;
+    margin-bottom: 18px;
+    box-shadow: 0 10px 30px rgba(15,23,42,.08);
+    align-items: flex-start;
+}
+
+.timeline span {
+    min-width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #2453a6;
+    color: #fff;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.timeline p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.cta {
+    background: linear-gradient(135deg, #0b2454, #123b86, #2c74d8);
+    color: #fff;
+    padding: 100px 0;
+}
+
+.cta h2 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: rgba(255,255,255,0.9);
+}
+
+.cta .btn {
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-weight: 700;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+    .fellowship-hero {
+        padding: 120px 0 80px;
+        min-height: auto;
+    }
+
+    .fellowship-hero h1 {
+        font-size: 38px;
+    }
+
+    .section {
+        padding: 70px 0;
+    }
+
+    .section h2,
+    .cta h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .fellowship-hero h1 {
+        font-size: 30px;
+    }
+
+    .section p,
+    .timeline p {
+        font-size: 15px;
+    }
+
+    .timeline {
+        flex-direction: column;
+    }
+
+    .timeline span {
+        width: 40px;
+        height: 40px;
+    }
+}

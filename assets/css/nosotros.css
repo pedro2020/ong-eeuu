@@ -1,0 +1,245 @@
+.about-hero {
+    position: relative;
+    padding: 110px 0 80px;
+    background: linear-gradient(135deg, #0b2454, #123b86, #2c74d8);
+    overflow: hidden;
+}
+
+.about-chip {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.about-hero h1 {
+    color: #fff;
+    font-size: 56px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.about-hero p {
+    color: rgba(255,255,255,0.88);
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.about-wrap {
+    padding: 80px 0;
+    background: #f6f9ff;
+}
+
+.doctor-card {
+    background: #fff;
+    border-radius: 28px;
+    padding: 24px;
+    box-shadow: 0 16px 45px rgba(15, 23, 42, 0.08);
+    border: 1px solid rgba(15, 23, 42, 0.04);
+    transition: all 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.doctor-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 22px 55px rgba(15, 23, 42, 0.12);
+}
+
+.doctor-card-top {
+    display: flex;
+    gap: 22px;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.doctor-photo-box {
+    width: 155px;
+    min-width: 155px;
+    height: 170px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #edf4ff;
+    box-shadow: 0 10px 30px rgba(36, 83, 166, 0.12);
+}
+
+.doctor-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.doctor-main {
+    flex: 1;
+}
+
+.doctor-name {
+    font-size: 28px;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.15;
+    margin-bottom: 8px;
+}
+
+.doctor-degree {
+    color: #2453a6;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.doctor-role {
+    display: inline-block;
+    padding: 7px 14px;
+    border-radius: 999px;
+    background: #eef4ff;
+    color: #2453a6;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.doctor-email {
+    color: #5b6475;
+    font-size: 14px;
+    word-break: break-word;
+}
+
+.doctor-card-body p {
+    color: #5b6475;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 14px;
+}
+
+.doctor-card-footer {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.social-btn {
+    border: none;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 110px;
+    padding: 11px 16px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.2s ease;
+    cursor: default;
+}
+
+.social-x {
+    background: #111827;
+    color: #fff;
+}
+
+.social-ig {
+    background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+    color: #fff;
+}
+
+.social-fb {
+    background: #1877f2;
+    color: #fff;
+}
+
+.social-in {
+    background: #0a66c2;
+    color: #fff;
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
+
+.custom-pagination {
+    margin-top: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.pagination-text {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.empty-box {
+    background: #fff;
+    border-radius: 24px;
+    padding: 40px;
+    text-align: center;
+    color: #5b6475;
+    box-shadow: 0 12px 35px rgba(15, 23, 42, 0.06);
+}
+
+@media (max-width: 991px) {
+    .about-hero {
+        padding: 90px 0 60px;
+    }
+
+    .about-hero h1 {
+        font-size: 40px;
+    }
+
+    .doctor-card-top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .doctor-photo-box {
+        width: 100%;
+        min-width: 100%;
+        height: 280px;
+    }
+
+    .doctor-name {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-wrap {
+        padding: 60px 0;
+    }
+
+    .about-hero h1 {
+        font-size: 30px;
+    }
+
+    .about-hero p {
+        font-size: 15px;
+    }
+
+    .doctor-card {
+        padding: 18px;
+        border-radius: 22px;
+    }
+
+    .doctor-photo-box {
+        height: 230px;
+        border-radius: 18px;
+    }
+
+    .social-btn {
+        min-width: auto;
+        flex: 1 1 calc(50% - 10px);
+    }
+}
